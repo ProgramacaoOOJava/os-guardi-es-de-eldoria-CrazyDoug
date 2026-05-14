@@ -106,7 +106,6 @@ A arquitetura de sistemas orientados a objetos reflete a complexidade do mundo r
 
 * Para realizar a entrega, faça o **commit** do seu código no repositório do GitHub Classroom fornecido.
 * Lembre-se de organizar cada classe em um arquivo separado (`.java`).
-* Cadastre o link do seu repositório na Guia de Trabalhos da SAVA.
 
 A jornada começa agora, Guardião. **Vamos lá!** 🚀☕
 
