@@ -1,30 +1,35 @@
 // Feito por Douglas Alves Costa
-// Nível Novato
+// Nível Aventureiro
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Personagem heroi1 = new Personagem(
-                "Arthemis",
-                "Arqueira",
-                5,
-                80,
-                12.5
+        Personagem[] personagens = new Personagem[2];
+
+        personagens[0] = new Guerreiro(
+                "Arthus",
+                10,
+                150,
+                25.5,
+                "Espada Flamejante"
         );
 
-        Personagem heroi2 = new Personagem(
-                "Thorgar",
-                "Guerreiro",
-                7,
-                120,
-                18.0
+        personagens[1] = new Mago(
+                "Merlin",
+                8,
+                90,
+                35.0,
+                "Bola de Fogo"
         );
 
-        heroi1.exibirStatus();
+        System.out.println("===== GUARDIÕES DE ELDORIA =====\n");
 
-        System.out.println();
+        for (Personagem personagem : personagens) {
+            personagem.exibirStatus();
+            personagem.usarHabilidadeEspecial();
+            System.out.println("------------------------------------");
+        }
 
-        heroi2.exibirStatus();
     }
 }

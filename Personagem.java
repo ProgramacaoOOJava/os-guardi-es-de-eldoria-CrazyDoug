@@ -1,13 +1,13 @@
 // Feito por Douglas Alves Costa
-// Nível Novato
+// Nível Aventureiro
 
-public class Personagem {
+public abstract class Personagem {
 
-    String nome;
-    String classe;
-    int nivel;
-    int pontosDeVida;
-    double poderBase;
+    protected String nome;
+    protected String classe;
+    protected int nivel;
+    protected int pontosDeVida;
+    protected double poderBase;
 
     public Personagem(String nome,
                       String classe,
@@ -24,13 +24,13 @@ public class Personagem {
 
     public void exibirStatus() {
 
-        System.out.println("=====================================");
-        System.out.println("      GUARDIÕES DE ELDORIA");
-        System.out.println("=====================================");
         System.out.println("Nome: " + nome);
         System.out.println("Classe: " + classe);
         System.out.println("Nível: " + nivel);
         System.out.println("Pontos de Vida: " + pontosDeVida);
         System.out.println("Poder Base: " + poderBase);
     }
+
+    public abstract void usarHabilidadeEspecial();
+
 }
